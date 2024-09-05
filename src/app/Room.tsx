@@ -9,9 +9,7 @@ import {
 
 export function Room({ children }: { children: ReactNode }) {
   return (
-    <LiveblocksProvider
-      publicApiKey={process.env.LIVE_BLOCKS_PUBLIC_API_KEY || ""}
-    >
+    <LiveblocksProvider publicApiKey={"pk_dev_T0EWR1-SrGOgnUgEHPFzobc-xvFoOE8cUA_VjKiigUPPmoiZWxKiC3X6WjBVWp3f"}>
       <RoomProvider id="my-room">
         <ClientSideSuspense fallback={<div>Loading…</div>}>
           {children}
